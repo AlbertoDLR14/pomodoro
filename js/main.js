@@ -7,7 +7,7 @@ let current = null;
 const addTarea = document.querySelector("#addTarea");
 const idTarea = document.querySelector("#idTest");
 const form = document.querySelector("#form");
-const tareaNombre = document.querySelector("#time #tarea");
+const tareaNombre = document.querySelector("#tarea");
 
 renderTime();
 renderTareas();
@@ -84,7 +84,7 @@ function timeHandler(id) {
 
 function startBreak() {
     time = 3;
-    tareaNombre.textContent = "Break";
+    tareaNombre.textContent = "Descanso...";
     renderTime()
     timerBreak = setInterval(() =>{
         timerBreakHandler();
