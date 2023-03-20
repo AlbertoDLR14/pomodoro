@@ -23,6 +23,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 #app .cabecera{
     display: flex;
@@ -67,6 +68,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+#time #valor:hover{
+    background-color: #3f3f3f2d;
+}
 
 .tarea-contenido{
     width: 100%;
@@ -80,7 +84,7 @@ body{
     gap: 10px;
 }
 #form #idTest{
-    width: calc(100%-60px);
+    width: calc(100% - 60px);
     padding: 15px;
     border-radius: 15px;
     background-color: transparent;
@@ -95,4 +99,54 @@ body{
     color: #32ff7e;
     font-size: 2em;
     cursor: pointer;
+}
+#form #addTarea:hover{
+    background-color: #3f3f3f2d;
+}
+.tarea-contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.miTarea{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+#task{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.completado .start-button{
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid #3f3f3f;
+    border-radius: 15px;
+    color:#32ff7e;
+    font-size: 12px;
+}
+.completado .start-button:hover{
+    background-color: #3f3f3f2d;
+}
+.completado .finalizado{
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid #3f3f3f;
+    border-radius: 15px;
+    color:#ff3232;
+    font-size: 12px;
+}
+.completado .finalizado:hover{
+    background-color: #3f3f3f2d;
+}
+
+.miTarea .titulo{
+    color: #b4b4b4;
 }

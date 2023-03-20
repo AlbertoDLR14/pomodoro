@@ -58,7 +58,7 @@ function renderTareas(){
 
 
 function empezarBotonHandler(id){
-    time = 5;
+    time = 25*60;
     current = id;
     //Almacenar la index del array cuando encuentre coincidencia
     const tareaIndex = tareas.findIndex((tarea) => tarea.id == id);
@@ -83,7 +83,7 @@ function timeHandler(id) {
 }
 
 function startBreak() {
-    time = 3;
+    time = 5*60;
     tareaNombre.textContent = "Descanso...";
     renderTime()
     timerBreak = setInterval(() =>{
